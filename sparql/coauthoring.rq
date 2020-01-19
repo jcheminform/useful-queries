@@ -1,0 +1,12 @@
+SELECT (
+  iri(CONCAT(
+    "https://tools.wmflabs.org/scholia/authors/",
+    GROUP_CONCAT(SUBSTR(STR(?author),32); separator=",")
+  )) AS ?authors) WHERE {
+  VALUES ?orcid {
+"0000-0002-5959-6190"
+"0000-0001-9828-2074"
+"0000-0002-4486-3356"
+  }
+  ?author wdt:P496 ?orcid .
+}
