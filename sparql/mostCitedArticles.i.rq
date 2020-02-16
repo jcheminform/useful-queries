@@ -1,0 +1,18 @@
+SELECT ?count ?work ?workLabel
+WITH {
+  SELECT
+    (COUNT(?citing_work) AS ?count) ?work
+  WHERE {
+    ?work wdt:P1433 wd:Q6294930 .
+    ?citing_work wdt:P2860 ?work.
+  }
+  GROUP BY ?work
+  ORDER BY DESC(?count)
+  LIMIT 10
+} AS %result
+WHERE {
+  INCLUDE %result
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en" . } 
+}
+ORDER BY DESC(?count) ?work
+

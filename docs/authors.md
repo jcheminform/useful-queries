@@ -91,6 +91,22 @@ This query lists the top 10 most prolific authors:
   </tr>
 </table>
 
+By removing the LIMIT we can find all authors:
 
-
-
+**SPARQL** [sparql/prolificAuthorsAll.rq](sparql/prolificAuthorsAll.code.html)
+```sparql
+SELECT ?count ?author ?authorLabel
+WITH {
+  SELECT ?author (COUNT(?work) AS ?count)
+  WHERE {
+    ?work wdt:P50 ?author ;
+          wdt:P1433 wd:Q6294930 .
+  }
+  GROUP BY ?author
+} AS %result
+WHERE {
+  INCLUDE %result 
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en" . } 
+}
+ORDER BY DESC(?count) ?author
+```
