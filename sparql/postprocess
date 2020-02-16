@@ -36,6 +36,7 @@ while (line != null) {
     } else if (line.charAt(0) == '%') {
       md.append(line.substring(1)+"\n");
     } else {
+      if (line.contains("<journal/>")) line = line.replace("<journal/>",journal)
       md.append(line+"\n");
     }
   }  
