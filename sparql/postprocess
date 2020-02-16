@@ -8,12 +8,6 @@ import java.util.*;
 runSuffix = ".rq";
 srcSuffix = runSuffix;
 
-journal = "??"
-def lines = new File("../journal.qid").readLines()
-lines.each { String line ->
-  journal = line.trim()
-}
-
 inFile = args[0];
 
 runClass = inFile.substring(0,inFile.indexOf(runSuffix));
@@ -36,7 +30,6 @@ while (line != null) {
     } else if (line.charAt(0) == '%') {
       md.append(line.substring(1)+"\n");
     } else {
-      if (line.contains("<journal/>")) line = line.replace("<journal/>",journal)
       md.append(line+"\n");
     }
   }  
@@ -50,7 +43,6 @@ mdTypes.add("code");
 def srcLines = new File(srcFile).readLines()
 unencodedSPARQL = ""
 srcLines.each { String srcLine ->
-  if (srcLine.contains("<journal/>")) srcLine = srcLine.replace("<journal/>",journal)
   unencodedSPARQL += srcLine + "\n"
 }
 encodedSPARQL = java.net.URLEncoder.encode(unencodedSPARQL, "UTF-8")
@@ -81,14 +73,12 @@ for (int type=0; type<mdTypes.size(); type++) {
       } else if (line.contains("%SOURCECODE%")) {
         srcLines = new File(srcFile).readLines()
         srcLines.each { String srcLine ->
-          if (srcLine.contains("<journal/>")) srcLine = srcLine.replace("<journal/>",journal)
           mdWriter.write(srcLine + "\n")
         }
         line = ""
       } else if (line.contains("%OUT%")) {
         srcLines = new File(runClass + ".out").readLines()
         srcLines.each { String srcLine ->
-          if (srcLine.contains("<journal/>")) srcLine = srcLine.replace("<journal/>",journal)
           mdWriter.write(srcLine + "\n")
         }
         line = ""

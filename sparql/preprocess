@@ -8,17 +8,9 @@
 bioclipse = new net.bioclipse.managers.BioclipseManager(".");
 rdf = new net.bioclipse.managers.RDFManager(".");
 
-journal = "??"
-def lines = new File("../journal.qid").readLines()
-lines.each { String line ->
-  journal = line.trim()
-}
-
-
 inFile = args[0];
 
 sparql = new File(inFile).text
-sparql = sparql.replace("<journal/>",journal)
 
 if (bioclipse.isOnline()) {
   resultsData = bioclipse.sparqlRemote(
