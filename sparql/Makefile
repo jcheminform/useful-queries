@@ -1,5 +1,8 @@
 CODEFILES: \
- $(shell groovy ../findScripts.groovy .. .out)
+ $(shell groovy ../findScripts.groovy .. .out | sort | uniq)
+
+RQFILES: \
+ $(shell groovy ../findScripts.groovy .. .rq | sort | uniq)
 
 .PRECIOUS: %.java %.groovy
 
@@ -11,7 +14,7 @@ distclean: clean
 clean:
 	@rm -f *~ allScriptsCompiled
 
-allScriptsCompiled: ${CODEFILES}
+allScriptsCompiled: ${RQFILES} ${CODEFILES}
 	@touch allScriptsCompiled
 
 %.rq: %.i.rq
