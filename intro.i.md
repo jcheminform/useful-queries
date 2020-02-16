@@ -12,13 +12,23 @@ To sketch the journal eco system in which your journal operates, it can be inter
 journals your authors are citing, and which journals are citing your articles. The following two
 subsections list the top 10 journals for both categories, inspired by Scholia queries.
 
+In both cases, you can remove the LIMIT to get the list of all journals.
+
 ### Journals cited by your articles
 
 <sparql>citedJournals</sparql>
 
+These 10 journals that are cited most from the journal are:
+
+<out>citedJournals</out>
+
 ### Journals citing your articles
 
 <sparql>citingJournals</sparql>
+
+These 10 journals cited your journal the most:
+
+<out>citingJournals</out>
 
 ## References
 

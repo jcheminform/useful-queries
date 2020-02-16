@@ -12,6 +12,8 @@ To sketch the journal eco system in which your journal operates, it can be inter
 journals your authors are citing, and which journals are citing your articles. The following two
 subsections list the top 10 journals for both categories, inspired by Scholia queries.
 
+In both cases, you can remove the LIMIT to get the list of all journals.
+
 ### Journals cited by your articles
 
 **SPARQL** [sparql/citedJournals.rq](sparql/citedJournals.code.html)
@@ -35,6 +37,66 @@ ORDER BY DESC(?count) ?cited_journal
 LIMIT 10
 ```
 
+These 10 journals that are cited most from the journal are:
+
+<table>
+  <tr>
+    <td><b>count</b></td>
+    <td><b>cited_journal</b></td>
+    <td><b>cited_journalLabel</b></td>
+  </tr>
+  <tr>
+    <td>2009</td>
+    <td>http://www.wikidata.org/entity/Q3007982</td>
+    <td>Journal of Chemical Information and Modeling</td>
+  </tr>
+  <tr>
+    <td>864</td>
+    <td>http://www.wikidata.org/entity/Q6294930</td>
+    <td>Journal of Cheminformatics</td>
+  </tr>
+  <tr>
+    <td>768</td>
+    <td>http://www.wikidata.org/entity/Q135122</td>
+    <td>Nucleic Acids Research</td>
+  </tr>
+  <tr>
+    <td>634</td>
+    <td>http://www.wikidata.org/entity/Q900316</td>
+    <td>Journal of Medicinal Chemistry</td>
+  </tr>
+  <tr>
+    <td>454</td>
+    <td>http://www.wikidata.org/entity/Q4914910</td>
+    <td>Bioinformatics</td>
+  </tr>
+  <tr>
+    <td>296</td>
+    <td>http://www.wikidata.org/entity/Q4835939</td>
+    <td>BMC Bioinformatics</td>
+  </tr>
+  <tr>
+    <td>292</td>
+    <td>http://www.wikidata.org/entity/Q15766522</td>
+    <td>Journal of Computer - Aided Molecular Design</td>
+  </tr>
+  <tr>
+    <td>275</td>
+    <td>http://www.wikidata.org/entity/Q3040085</td>
+    <td>Drug Discovery Today</td>
+  </tr>
+  <tr>
+    <td>187</td>
+    <td>http://www.wikidata.org/entity/Q3186908</td>
+    <td>Journal of Computational Chemistry</td>
+  </tr>
+  <tr>
+    <td>176</td>
+    <td>http://www.wikidata.org/entity/Q564954</td>
+    <td>PLOS ONE</td>
+  </tr>
+</table>
+
 ### Journals citing your articles
 
 **SPARQL** [sparql/citingJournals.rq](sparql/citingJournals.code.html)
@@ -57,6 +119,66 @@ WHERE {
 }
 ORDER BY DESC(?count) ?citing_journal
 ```
+
+These 10 journals cited your journal the most:
+
+<table>
+  <tr>
+    <td><b>count</b></td>
+    <td><b>citing_journal</b></td>
+    <td><b>citing_journalLabel</b></td>
+  </tr>
+  <tr>
+    <td>864</td>
+    <td>http://www.wikidata.org/entity/Q6294930</td>
+    <td>Journal of Cheminformatics</td>
+  </tr>
+  <tr>
+    <td>207</td>
+    <td>http://www.wikidata.org/entity/Q564954</td>
+    <td>PLOS ONE</td>
+  </tr>
+  <tr>
+    <td>175</td>
+    <td>http://www.wikidata.org/entity/Q2261792</td>
+    <td>Scientific Reports</td>
+  </tr>
+  <tr>
+    <td>157</td>
+    <td>http://www.wikidata.org/entity/Q135122</td>
+    <td>Nucleic Acids Research</td>
+  </tr>
+  <tr>
+    <td>152</td>
+    <td>http://www.wikidata.org/entity/Q3319476</td>
+    <td>Molecular Informatics</td>
+  </tr>
+  <tr>
+    <td>140</td>
+    <td>http://www.wikidata.org/entity/Q15766522</td>
+    <td>Journal of Computer - Aided Molecular Design</td>
+  </tr>
+  <tr>
+    <td>124</td>
+    <td>http://www.wikidata.org/entity/Q4914910</td>
+    <td>Bioinformatics</td>
+  </tr>
+  <tr>
+    <td>109</td>
+    <td>http://www.wikidata.org/entity/Q4835939</td>
+    <td>BMC Bioinformatics</td>
+  </tr>
+  <tr>
+    <td>103</td>
+    <td>http://www.wikidata.org/entity/Q5227381</td>
+    <td>Database</td>
+  </tr>
+  <tr>
+    <td>102</td>
+    <td>http://www.wikidata.org/entity/Q3007982</td>
+    <td>Journal of Chemical Information and Modeling</td>
+  </tr>
+</table>
 
 ## References
 
