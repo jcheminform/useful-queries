@@ -16,5 +16,5 @@ WHERE {
   # Label the results
   SERVICE wikibase:label { bd:serviceParam wikibase:language "en" . } 
 }
-ORDER BY DESC(?count)
+ORDER BY DESC(?count) ?author
 LIMIT 10
