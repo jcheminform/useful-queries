@@ -1,0 +1,23 @@
+// Copyright (c) 2020  Egon Willighagen <egon.willighagen@gmail.com>
+//
+// GPL v3
+
+@Grab(group='io.github.egonw.bacting', module='managers-rdf', version='0.0.10')
+@Grab(group='io.github.egonw.bacting', module='managers-ui', version='0.0.10')
+
+bioclipse = new net.bioclipse.managers.BioclipseManager(".");
+rdf = new net.bioclipse.managers.RDFManager(".");
+
+journal = "??"
+def lines = new File("../journal.qid").readLines()
+lines.each { String line ->
+  journal = line.trim()
+}
+
+
+inFile = args[0];
+
+sparql = new File(inFile).text
+sparql = sparql.replace("<journal/>",journal)
+
+println sparql

@@ -10,4 +10,3 @@ SELECT (
   }
   ?author wdt:P496 ?orcid .
 }
-
