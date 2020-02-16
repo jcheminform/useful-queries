@@ -18,4 +18,3 @@ WHERE {
 }
 ORDER BY DESC(?count) ?author
 LIMIT 10
-

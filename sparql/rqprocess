@@ -20,4 +20,4 @@ inFile = args[0];
 sparql = new File(inFile).text
 sparql = sparql.replace("<journal/>",journal)
 
-println sparql
+print sparql
