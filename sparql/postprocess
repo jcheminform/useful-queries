@@ -8,6 +8,12 @@ import java.util.*;
 runSuffix = ".rq";
 srcSuffix = runSuffix;
 
+journal = "??"
+def lines = new File("../journal.qid").readLines()
+lines.each { String line ->
+  journal = line.trim()
+}
+
 inFile = args[0];
 
 runClass = inFile.substring(0,inFile.indexOf(runSuffix));
@@ -42,7 +48,10 @@ mdTypes.add("code");
 
 def srcLines = new File(srcFile).readLines()
 unencodedSPARQL = ""
-srcLines.each { String srcLine -> unencodedSPARQL += srcLine + "\n" }
+srcLines.each { String srcLine ->
+  if (srcLine.contains("<journal/>")) srcLine = srcLine.replace("<journal/>",journal)
+  unencodedSPARQL += srcLine + "\n"
+}
 encodedSPARQL = java.net.URLEncoder.encode(unencodedSPARQL, "UTF-8")
 runURL = "https://query.wikidata.org/" + encodedSPARQL
 editURL = "https://query.wikidata.org/embed.html#" + encodedSPARQL // Virtuoso specific?
@@ -70,11 +79,17 @@ for (int type=0; type<mdTypes.size(); type++) {
         line = line + "\n";
       } else if (line.contains("%SOURCECODE%")) {
         srcLines = new File(srcFile).readLines()
-        srcLines.each { String srcLine -> mdWriter.write(srcLine + "\n") }
+        srcLines.each { String srcLine ->
+          if (srcLine.contains("<journal/>")) srcLine = srcLine.replace("<journal/>",journal)
+          mdWriter.write(srcLine + "\n")
+        }
         line = ""
       } else if (line.contains("%OUT%")) {
         srcLines = new File(runClass + ".out").readLines()
-        srcLines.each { String srcLine -> mdWriter.write(srcLine + "\n") }
+        srcLines.each { String srcLine ->
+          if (srcLine.contains("<journal/>")) srcLine = srcLine.replace("<journal/>",journal)
+          mdWriter.write(srcLine + "\n")
+        }
         line = ""
       } else {
         line = line + "\n";
