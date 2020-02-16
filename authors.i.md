@@ -1,6 +1,7 @@
 # Authors
 
-Your journals has to primary audiences, your readers and your authors. A scholarly journal
+Your journals has to primary <topic>audience</topic>s, your <topic>readers</topic> and your <topic>authors</topic>.
+A scholarly journal
 is bringing these together. The reviewers are a subset of your readers.
 
 ## Prolific authors
@@ -10,7 +11,7 @@ is not complete in this respect, but this gives you some idea:
 
 <sparql>prolificAuthors</sparql>
 
-This query lists the top 10 most prolific authors:
+This query lists the top 10 most <topic>prolific authors</topic>:
 
 <out>prolificAuthors</out>
 

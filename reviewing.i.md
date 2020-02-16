@@ -2,7 +2,7 @@
 
 ## Reviewers
 
-When looking for reviewers, you may be interested in learning of the authors and
+When looking for <topic>reviewers</topic>, you may be interested in learning of the authors and
 reviewers worked together recently. Then this query may be useful
 ([source](https://chem-bla-ics.blogspot.com/2019/08/finding-potential-reviewers-using.html)):
 

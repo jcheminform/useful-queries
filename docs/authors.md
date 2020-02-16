@@ -1,6 +1,7 @@
 # Authors
 
-Your journals has to primary audiences, your readers and your authors. A scholarly journal
+Your journals has to primary <a name="tp1">audience</a>s, your <a name="tp2">readers</a> and your <a name="tp3">authors</a>.
+A scholarly journal
 is bringing these together. The reviewers are a subset of your readers.
 
 ## Prolific authors
@@ -31,7 +32,7 @@ ORDER BY DESC(?count) ?author
 LIMIT 10
 ```
 
-This query lists the top 10 most prolific authors:
+This query lists the top 10 most <a name="tp4">prolific authors</a>:
 
 <table>
   <tr>

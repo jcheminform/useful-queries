@@ -1,6 +1,6 @@
 # Articles
 
-This sections contains a collection of queries related to journal articles.
+This sections contains a collection of queries related to journal <a name="tp1">article</a>s.
 
 ## Most cited articles
 
@@ -30,7 +30,7 @@ WHERE {
 ORDER BY DESC(?count) ?work
 ```
 
-It lists the 10 most cited articles:
+It lists the 10 <a name="tp2">most cited</a> articles:
 
 <table>
   <tr>
@@ -92,7 +92,7 @@ It lists the 10 most cited articles:
 
 ## Articles citing retracted articles
 
-For example, you may be interested which articles are citing retracted articles.
+For example, you may be interested which articles are citing <a name="tp3">retracted article</a>s.
 The following query can be used for this:
 
 **SPARQL** [sparql/citingRetractions.rq](sparql/citingRetractions.code.html)
@@ -149,6 +149,3 @@ of writing:
     <td>CVDHD: a cardiovascular disease herbal database for drug discovery and network pharmacology.</td>
   </tr>
 </table>
-
-
-
