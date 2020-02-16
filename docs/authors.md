@@ -18,7 +18,7 @@ WITH {
     (COUNT(?work) AS ?count)
   WHERE {
     ?work wdt:P50 ?author ;
-          wdt:P1433 wd:<journal/> .
+          wdt:P1433 wd:Q6294930 .
   }
   GROUP BY ?author
 } AS %result
@@ -27,7 +27,7 @@ WHERE {
   # Label the results
   SERVICE wikibase:label { bd:serviceParam wikibase:language "en" . } 
 }
-ORDER BY DESC(?count)
+ORDER BY DESC(?count) ?author
 LIMIT 10
 ```
 
@@ -61,8 +61,8 @@ This query lists the top 10 most prolific authors:
   </tr>
   <tr>
     <td>15</td>
-    <td>http://www.wikidata.org/entity/Q908710</td>
-    <td>Peter Murray-Rust</td>
+    <td>http://www.wikidata.org/entity/Q28379581</td>
+    <td>Stephen H Bryant</td>
   </tr>
   <tr>
     <td>15</td>
@@ -71,13 +71,8 @@ This query lists the top 10 most prolific authors:
   </tr>
   <tr>
     <td>15</td>
-    <td>http://www.wikidata.org/entity/Q28379581</td>
-    <td>Stephen H Bryant</td>
-  </tr>
-  <tr>
-    <td>14</td>
-    <td>http://www.wikidata.org/entity/Q39934705</td>
-    <td>Jaroslav Koča</td>
+    <td>http://www.wikidata.org/entity/Q908710</td>
+    <td>Peter Murray-Rust</td>
   </tr>
   <tr>
     <td>14</td>
@@ -88,6 +83,11 @@ This query lists the top 10 most prolific authors:
     <td>14</td>
     <td>http://www.wikidata.org/entity/Q28925563</td>
     <td>Andreas Bender</td>
+  </tr>
+  <tr>
+    <td>14</td>
+    <td>http://www.wikidata.org/entity/Q39934705</td>
+    <td>Jaroslav Koča</td>
   </tr>
 </table>
 
