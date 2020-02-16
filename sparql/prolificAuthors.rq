@@ -1,0 +1,20 @@
+# Prolific authors for a specific journal
+SELECT ?count ?author ?authorLabel
+WITH {
+  # Count the number of works author by the author publishing in the journal
+  SELECT
+    ?author
+    (COUNT(?work) AS ?count)
+  WHERE {
+    ?work wdt:P50 ?author ;
+          wdt:P1433 wd:<journal/> .
+  }
+  GROUP BY ?author
+} AS %result
+WHERE {
+  INCLUDE %result 
+  # Label the results
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en" . } 
+}
+ORDER BY DESC(?count)
+LIMIT 10
