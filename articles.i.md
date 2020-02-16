@@ -7,9 +7,13 @@ This sections contains a collection of queries related to journal articles.
 One thing we may be interested in is learning which topics have seen more citations
 than others, hopefully reflecting impact, but we cannot decide that from just
 citation counts. The following query takes advantage of the [WikiCite](http://wikicite.org/)
-ideas, and lists the 10 most cited articles:
+ideas:
 
 <sparql>mostCitedArticles</sparql>
+
+It lists the 10 most cited articles:
+
+<out>mostCitedArticles</out>
 
 ## Articles citing retracted articles
 
