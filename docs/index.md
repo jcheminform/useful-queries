@@ -17,6 +17,9 @@ Wishes, comments, and pull requests can be send to
 ## Contents
 
 1. [Introduction](intro.md) <br />
+1.1. [Related journals](intro.md#related-journals) <br />
+1.1.1. [Journals cited by your articles](intro.md#journals-cited-by-your-articles) <br />
+1.1.2. [Journals citing your articles](intro.md#journals-citing-your-articles) <br />
 2. [Articles](articles.md) <br />
 2.1. [Most cited articles](articles.md#most-cited-articles) <br />
 2.2. [Articles citing retracted articles](articles.md#articles-citing-retracted-articles) <br />

@@ -6,6 +6,58 @@ scholarly publications (cited in Wikipedia) [<a href="#citeref2">2</a>]. Inspire
 [Scholia](https://tools.wmflabs.org/scholia/) [<a href="#citeref3">3</a>], this electronic books collects
 a number of queries useful to journal editors.
 
+## Related journals
+
+To sketch the journal eco system in which your journal operates, it can be interested to learn which
+journals your authors are citing, and which journals are citing your articles. The following two
+subsections list the top 10 journals for both categories, inspired by Scholia queries.
+
+### Journals cited by your articles
+
+**SPARQL** [sparql/citedJournals.rq](sparql/citedJournals.code.html)
+```sparql
+SELECT
+  ?count ?cited_journal ?cited_journalLabel
+WITH {
+  SELECT (COUNT(?cited_work) AS ?count) ?cited_journal
+  WHERE {
+    ?work wdt:P1433 wd:Q6294930 .
+    ?work wdt:P2860 ?cited_work .
+    ?cited_work wdt:P1433 ?cited_journal . 
+  }
+  GROUP BY ?cited_journal
+} AS %result
+WHERE {
+  INCLUDE %result
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en" . } 
+}
+ORDER BY DESC(?count) ?cited_journal
+LIMIT 10
+```
+
+### Journals citing your articles
+
+**SPARQL** [sparql/citingJournals.rq](sparql/citingJournals.code.html)
+```sparql
+SELECT ?count ?citing_journal ?citing_journalLabel 
+WITH {
+  SELECT (COUNT(?citing_work) as ?count) ?citing_journal
+  WHERE {
+    ?work wdt:P1433 wd:Q6294930 .
+    ?citing_work wdt:P2860 ?work ;
+                 wdt:P1433 ?citing_journal .
+  }
+  GROUP BY ?citing_journal
+  ORDER BY DESC(?count)
+  LIMIT 10
+} AS %result
+WHERE {
+  INCLUDE %result
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en" . } 
+}
+ORDER BY DESC(?count) ?citing_journal
+```
+
 ## References
 
 1. <a name="citeref1"></a>Vrandečić D. Wikidata: A New Platform for Collaborative Data Collection. Proceedings of the 21st International Conference on World Wide Web. 2012;1063–4.  doi:[10.1145/2187980.2188242](https://doi.org/10.1145/2187980.2188242) ([Scholia](https://tools.wmflabs.org/scholia/doi/10.1145/2187980.2188242))

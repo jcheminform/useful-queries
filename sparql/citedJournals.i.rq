@@ -1,0 +1,18 @@
+SELECT
+  ?count ?cited_journal ?cited_journalLabel
+WITH {
+  SELECT (COUNT(?cited_work) AS ?count) ?cited_journal
+  WHERE {
+    ?work wdt:P1433 wd:<journal/> .
+    ?work wdt:P2860 ?cited_work .
+    ?cited_work wdt:P1433 ?cited_journal . 
+  }
+  GROUP BY ?cited_journal
+} AS %result
+WHERE {
+  INCLUDE %result
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en" . } 
+}
+ORDER BY DESC(?count) ?cited_journal
+LIMIT 10
+
