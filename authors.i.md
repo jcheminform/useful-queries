@@ -14,6 +14,6 @@ This query lists the top 10 most prolific authors:
 
 <out>prolificAuthors</out>
 
+By removing the LIMIT we can find all authors:
 
-
-
+<sparql>prolificAuthorsAll</sparql>
