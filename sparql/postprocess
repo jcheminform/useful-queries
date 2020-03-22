@@ -1,4 +1,4 @@
-// Copyright (c) 2009-2018  Egon Willighagen <egon.willighagen@gmail.com>
+// Copyright (c) 2009-2020  Egon Willighagen <egon.willighagen@gmail.com>
 //
 // GPL v3
 
@@ -42,12 +42,11 @@ mdTypes.add("code");
 
 def srcLines = new File(srcFile).readLines()
 unencodedSPARQL = ""
-srcLines.each { String srcLine ->
-  unencodedSPARQL += srcLine + "\n"
-}
+srcLines.each { String srcLine -> unencodedSPARQL += srcLine + "\n" }
 encodedSPARQL = java.net.URLEncoder.encode(unencodedSPARQL, "UTF-8")
-runURL = "https://query.wikidata.org/" + encodedSPARQL
-editURL = "https://query.wikidata.org/embed.html#" + encodedSPARQL // Virtuoso specific?
+encodedSPARQL = encodedSPARQL.replace("+","%20");
+runURL = "https://query.wikidata.org/embed.html#" + encodedSPARQL
+editURL = "https://query.wikidata.org/#" + encodedSPARQL
 
 for (int type=0; type<mdTypes.size(); type++) {
   mdFile = runClass + "." + mdTypes.get(type) + ".md";
