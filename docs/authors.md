@@ -38,57 +38,46 @@ This query lists the top 10 most <a name="tp4">prolific authors</a>:
   <tr>
     <td><b>count</b></td>
     <td><b>author</b></td>
-    <td><b>authorLabel</b></td>
   </tr>
   <tr>
     <td>21</td>
-    <td>http://www.wikidata.org/entity/Q5111731</td>
-    <td>Christoph Steinbeck</td>
+    <td><a href="https://tools.wmflabs.org/scholia/Q5111731">Christoph Steinbeck</a> (<a href="http://www.wikidata.org/entity/Q5111731">edit</a>)</td>
   </tr>
   <tr>
     <td>19</td>
-    <td>http://www.wikidata.org/entity/Q28194918</td>
-    <td>Evan E. Bolton</td>
+    <td><a href="https://tools.wmflabs.org/scholia/Q28194918">Evan E. Bolton</a> (<a href="http://www.wikidata.org/entity/Q28194918">edit</a>)</td>
   </tr>
   <tr>
     <td>18</td>
-    <td>http://www.wikidata.org/entity/Q41893354</td>
-    <td>Matthias Rarey</td>
+    <td><a href="https://tools.wmflabs.org/scholia/Q41893354">Matthias Rarey</a> (<a href="http://www.wikidata.org/entity/Q41893354">edit</a>)</td>
   </tr>
   <tr>
     <td>16</td>
-    <td>http://www.wikidata.org/entity/Q20895241</td>
-    <td>Egon Willighagen</td>
+    <td><a href="https://tools.wmflabs.org/scholia/Q20895241">Egon Willighagen</a> (<a href="http://www.wikidata.org/entity/Q20895241">edit</a>)</td>
   </tr>
   <tr>
     <td>15</td>
-    <td>http://www.wikidata.org/entity/Q28379581</td>
-    <td>Stephen H Bryant</td>
+    <td><a href="https://tools.wmflabs.org/scholia/Q28379581">Stephen H Bryant</a> (<a href="http://www.wikidata.org/entity/Q28379581">edit</a>)</td>
   </tr>
   <tr>
     <td>15</td>
-    <td>http://www.wikidata.org/entity/Q4777220</td>
-    <td>Antony John Williams</td>
+    <td><a href="https://tools.wmflabs.org/scholia/Q4777220">Antony John Williams</a> (<a href="http://www.wikidata.org/entity/Q4777220">edit</a>)</td>
   </tr>
   <tr>
     <td>15</td>
-    <td>http://www.wikidata.org/entity/Q908710</td>
-    <td>Peter Murray-Rust</td>
+    <td><a href="https://tools.wmflabs.org/scholia/Q908710">Peter Murray-Rust</a> (<a href="http://www.wikidata.org/entity/Q908710">edit</a>)</td>
   </tr>
   <tr>
     <td>14</td>
-    <td>http://www.wikidata.org/entity/Q27061853</td>
-    <td>Ola Spjuth</td>
+    <td><a href="https://tools.wmflabs.org/scholia/Q27061853">Ola Spjuth</a> (<a href="http://www.wikidata.org/entity/Q27061853">edit</a>)</td>
   </tr>
   <tr>
     <td>14</td>
-    <td>http://www.wikidata.org/entity/Q28925563</td>
-    <td>Andreas Bender</td>
+    <td><a href="https://tools.wmflabs.org/scholia/Q28925563">Andreas Bender</a> (<a href="http://www.wikidata.org/entity/Q28925563">edit</a>)</td>
   </tr>
   <tr>
     <td>14</td>
-    <td>http://www.wikidata.org/entity/Q39934705</td>
-    <td>Jaroslav Koča</td>
+    <td><a href="https://tools.wmflabs.org/scholia/Q39934705">Jaroslav Koča</a> (<a href="http://www.wikidata.org/entity/Q39934705">edit</a>)</td>
   </tr>
 </table>
 

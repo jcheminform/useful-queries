@@ -26,57 +26,46 @@ ORDER BY DESC(?count) ?work
   <tr>
     <td><b>count</b></td>
     <td><b>work</b></td>
-    <td><b>workLabel</b></td>
   </tr>
   <tr>
     <td>733</td>
-    <td>http://www.wikidata.org/entity/Q21198766</td>
-    <td>Open Babel: An open chemical toolbox</td>
+    <td><a href="https://tools.wmflabs.org/scholia/Q21198766">Open Babel: An open chemical toolbox</a> (<a href="http://www.wikidata.org/entity/Q21198766">edit</a>)</td>
   </tr>
   <tr>
     <td>424</td>
-    <td>http://www.wikidata.org/entity/Q21092922</td>
-    <td>Avogadro: an advanced semantic chemical editor, visualization, and analysis platform</td>
+    <td><a href="https://tools.wmflabs.org/scholia/Q21092922">Avogadro: an advanced semantic chemical editor, visualization, and analysis platform</a> (<a href="http://www.wikidata.org/entity/Q21092922">edit</a>)</td>
   </tr>
   <tr>
     <td>174</td>
-    <td>http://www.wikidata.org/entity/Q27702050</td>
-    <td>Organization of GC/MS and LC/MS metabolomics data into chemical libraries</td>
+    <td><a href="https://tools.wmflabs.org/scholia/Q27702050">Organization of GC/MS and LC/MS metabolomics data into chemical libraries</a> (<a href="http://www.wikidata.org/entity/Q27702050">edit</a>)</td>
   </tr>
   <tr>
     <td>94</td>
-    <td>http://www.wikidata.org/entity/Q27703005</td>
-    <td>TCMSP: a database of systems pharmacology for drug discovery from herbal medicines</td>
+    <td><a href="https://tools.wmflabs.org/scholia/Q27703005">TCMSP: a database of systems pharmacology for drug discovery from herbal medicines</a> (<a href="http://www.wikidata.org/entity/Q27703005">edit</a>)</td>
   </tr>
   <tr>
     <td>82</td>
-    <td>http://www.wikidata.org/entity/Q21030547</td>
-    <td>InChI - the worldwide chemical structure identifier standard</td>
+    <td><a href="https://tools.wmflabs.org/scholia/Q21030547">InChI - the worldwide chemical structure identifier standard</a> (<a href="http://www.wikidata.org/entity/Q21030547">edit</a>)</td>
   </tr>
   <tr>
     <td>79</td>
-    <td>http://www.wikidata.org/entity/Q27702054</td>
-    <td>Application of the PM6 semi-empirical method to modeling proteins enhances docking accuracy of AutoDock</td>
+    <td><a href="https://tools.wmflabs.org/scholia/Q27702054">Application of the PM6 semi-empirical method to modeling proteins enhances docking accuracy of AutoDock</a> (<a href="http://www.wikidata.org/entity/Q27702054">edit</a>)</td>
   </tr>
   <tr>
     <td>58</td>
-    <td>http://www.wikidata.org/entity/Q21198771</td>
-    <td>Small Molecule Subgraph Detector (SMSD) toolkit</td>
+    <td><a href="https://tools.wmflabs.org/scholia/Q21198771">Small Molecule Subgraph Detector (SMSD) toolkit</a> (<a href="http://www.wikidata.org/entity/Q21198771">edit</a>)</td>
   </tr>
   <tr>
     <td>56</td>
-    <td>http://www.wikidata.org/entity/Q27703086</td>
-    <td>MOLE 2.0: advanced approach for analysis of biomacromolecular channels</td>
+    <td><a href="https://tools.wmflabs.org/scholia/Q27703086">MOLE 2.0: advanced approach for analysis of biomacromolecular channels</a> (<a href="http://www.wikidata.org/entity/Q27703086">edit</a>)</td>
   </tr>
   <tr>
     <td>53</td>
-    <td>http://www.wikidata.org/entity/Q24607780</td>
-    <td>Linked open drug data for pharmaceutical research and development</td>
+    <td><a href="https://tools.wmflabs.org/scholia/Q24607780">Linked open drug data for pharmaceutical research and development</a> (<a href="http://www.wikidata.org/entity/Q24607780">edit</a>)</td>
   </tr>
   <tr>
     <td>53</td>
-    <td>http://www.wikidata.org/entity/Q27702310</td>
-    <td>Why is Tanimoto index an appropriate choice for fingerprint-based similarity calculations?</td>
+    <td><a href="https://tools.wmflabs.org/scholia/Q27702310">Why is Tanimoto index an appropriate choice for fingerprint-based similarity calculations?</a> (<a href="http://www.wikidata.org/entity/Q27702310">edit</a>)</td>
   </tr>
 </table>
 ## Code examples
@@ -85,3 +74,4 @@ ORDER BY DESC(?count) ?work
 curl -o mostCitedArticles.rq https://raw.githubusercontent.com/jcheminform/useful-queries/master/sparql/mostCitedArticles.rq
 curl -H "Accept: text/tab-separated-values" -G https://query.wikidata.org/bigdata/namespace/wdq/sparql --data-urlencode query@mostCitedArticles.rq
 ```
+This SPARQL query is available under CCZero.

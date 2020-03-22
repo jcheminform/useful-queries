@@ -39,17 +39,13 @@ ORDER BY DESC(?date)
 <table>
   <tr>
     <td><b>retracted_work</b></td>
-    <td><b>retracted_workLabel</b></td>
     <td><b>date</b></td>
     <td><b>citing_work</b></td>
-    <td><b>citing_workLabel</b></td>
   </tr>
   <tr>
-    <td>http://www.wikidata.org/entity/Q34203691</td>
-    <td>RETRACTED: Predicting new molecular targets for rhein using network pharmacology.</td>
+    <td><a href="https://tools.wmflabs.org/scholia/Q34203691">RETRACTED: Predicting new molecular targets for rhein using network pharmacology.</a> (<a href="http://www.wikidata.org/entity/Q34203691">edit</a>)</td>
     <td>2014-09-18</td>
-    <td>http://www.wikidata.org/entity/Q37426159</td>
-    <td>CVDHD: a cardiovascular disease herbal database for drug discovery and network pharmacology.</td>
+    <td><a href="https://tools.wmflabs.org/scholia/Q37426159">CVDHD: a cardiovascular disease herbal database for drug discovery and network pharmacology.</a> (<a href="http://www.wikidata.org/entity/Q37426159">edit</a>)</td>
   </tr>
 </table>
 ## Code examples
@@ -58,3 +54,4 @@ ORDER BY DESC(?date)
 curl -o citingRetractions.rq https://raw.githubusercontent.com/jcheminform/useful-queries/master/sparql/citingRetractions.rq
 curl -H "Accept: text/tab-separated-values" -G https://query.wikidata.org/bigdata/namespace/wdq/sparql --data-urlencode query@citingRetractions.rq
 ```
+This SPARQL query is available under CCZero.
