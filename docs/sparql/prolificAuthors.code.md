@@ -30,44 +30,44 @@ LIMIT 10
     <td><b>author</b></td>
   </tr>
   <tr>
-    <td>21</td>
-    <td><a href="https://tools.wmflabs.org/scholia/Q5111731">Christoph Steinbeck</a> (<a href="http://www.wikidata.org/entity/Q5111731">edit</a>)</td>
+    <td>22</td>
+    <td><a href="https://scholia.toolforge.org/Q5111731">Christoph Steinbeck</a> (<a href="http://www.wikidata.org/entity/Q5111731">edit</a>)</td>
+  </tr>
+  <tr>
+    <td>20</td>
+    <td><a href="https://scholia.toolforge.org/Q41893354">Matthias Rarey</a> (<a href="http://www.wikidata.org/entity/Q41893354">edit</a>)</td>
   </tr>
   <tr>
     <td>19</td>
-    <td><a href="https://tools.wmflabs.org/scholia/Q28194918">Evan E. Bolton</a> (<a href="http://www.wikidata.org/entity/Q28194918">edit</a>)</td>
-  </tr>
-  <tr>
-    <td>18</td>
-    <td><a href="https://tools.wmflabs.org/scholia/Q41893354">Matthias Rarey</a> (<a href="http://www.wikidata.org/entity/Q41893354">edit</a>)</td>
+    <td><a href="https://scholia.toolforge.org/Q28194918">Evan E. Bolton</a> (<a href="http://www.wikidata.org/entity/Q28194918">edit</a>)</td>
   </tr>
   <tr>
     <td>16</td>
-    <td><a href="https://tools.wmflabs.org/scholia/Q20895241">Egon Willighagen</a> (<a href="http://www.wikidata.org/entity/Q20895241">edit</a>)</td>
+    <td><a href="https://scholia.toolforge.org/Q20895241">Egon Willighagen</a> (<a href="http://www.wikidata.org/entity/Q20895241">edit</a>)</td>
   </tr>
   <tr>
     <td>15</td>
-    <td><a href="https://tools.wmflabs.org/scholia/Q28379581">Stephen H Bryant</a> (<a href="http://www.wikidata.org/entity/Q28379581">edit</a>)</td>
+    <td><a href="https://scholia.toolforge.org/Q28379581">Stephen H Bryant</a> (<a href="http://www.wikidata.org/entity/Q28379581">edit</a>)</td>
   </tr>
   <tr>
     <td>15</td>
-    <td><a href="https://tools.wmflabs.org/scholia/Q4777220">Antony John Williams</a> (<a href="http://www.wikidata.org/entity/Q4777220">edit</a>)</td>
+    <td><a href="https://scholia.toolforge.org/Q4777220">Antony John Williams</a> (<a href="http://www.wikidata.org/entity/Q4777220">edit</a>)</td>
   </tr>
   <tr>
     <td>15</td>
-    <td><a href="https://tools.wmflabs.org/scholia/Q908710">Peter Murray-Rust</a> (<a href="http://www.wikidata.org/entity/Q908710">edit</a>)</td>
+    <td><a href="https://scholia.toolforge.org/Q908710">Peter Murray-Rust</a> (<a href="http://www.wikidata.org/entity/Q908710">edit</a>)</td>
   </tr>
   <tr>
     <td>14</td>
-    <td><a href="https://tools.wmflabs.org/scholia/Q27061853">Ola Spjuth</a> (<a href="http://www.wikidata.org/entity/Q27061853">edit</a>)</td>
+    <td><a href="https://scholia.toolforge.org/Q39934705">Jaroslav Koča</a> (<a href="http://www.wikidata.org/entity/Q39934705">edit</a>)</td>
   </tr>
   <tr>
-    <td>14</td>
-    <td><a href="https://tools.wmflabs.org/scholia/Q28925563">Andreas Bender</a> (<a href="http://www.wikidata.org/entity/Q28925563">edit</a>)</td>
+    <td>13</td>
+    <td><a href="https://scholia.toolforge.org/Q27061853">Ola Spjuth</a> (<a href="http://www.wikidata.org/entity/Q27061853">edit</a>)</td>
   </tr>
   <tr>
-    <td>14</td>
-    <td><a href="https://tools.wmflabs.org/scholia/Q39934705">Jaroslav Koča</a> (<a href="http://www.wikidata.org/entity/Q39934705">edit</a>)</td>
+    <td>13</td>
+    <td><a href="https://scholia.toolforge.org/Q28925563">Andreas Bender</a> (<a href="http://www.wikidata.org/entity/Q28925563">edit</a>)</td>
   </tr>
 </table>
 ## Code examples

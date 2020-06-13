@@ -28,43 +28,43 @@ ORDER BY DESC(?count) ?citing_journal
   </tr>
   <tr>
     <td>864</td>
-    <td><a href="https://tools.wmflabs.org/scholia/Q6294930">Journal of Cheminformatics</a> (<a href="http://www.wikidata.org/entity/Q6294930">edit</a>)</td>
+    <td><a href="https://scholia.toolforge.org/Q6294930">Journal of Cheminformatics</a> (<a href="http://www.wikidata.org/entity/Q6294930">edit</a>)</td>
   </tr>
   <tr>
     <td>207</td>
-    <td><a href="https://tools.wmflabs.org/scholia/Q564954">PLOS ONE</a> (<a href="http://www.wikidata.org/entity/Q564954">edit</a>)</td>
+    <td><a href="https://scholia.toolforge.org/Q564954">PLOS ONE</a> (<a href="http://www.wikidata.org/entity/Q564954">edit</a>)</td>
   </tr>
   <tr>
     <td>175</td>
-    <td><a href="https://tools.wmflabs.org/scholia/Q2261792">Scientific Reports</a> (<a href="http://www.wikidata.org/entity/Q2261792">edit</a>)</td>
+    <td><a href="https://scholia.toolforge.org/Q2261792">Scientific Reports</a> (<a href="http://www.wikidata.org/entity/Q2261792">edit</a>)</td>
   </tr>
   <tr>
     <td>157</td>
-    <td><a href="https://tools.wmflabs.org/scholia/Q135122">Nucleic Acids Research</a> (<a href="http://www.wikidata.org/entity/Q135122">edit</a>)</td>
+    <td><a href="https://scholia.toolforge.org/Q135122">Nucleic Acids Research</a> (<a href="http://www.wikidata.org/entity/Q135122">edit</a>)</td>
   </tr>
   <tr>
     <td>152</td>
-    <td><a href="https://tools.wmflabs.org/scholia/Q3319476">Molecular Informatics</a> (<a href="http://www.wikidata.org/entity/Q3319476">edit</a>)</td>
+    <td><a href="https://scholia.toolforge.org/Q3319476">Molecular Informatics</a> (<a href="http://www.wikidata.org/entity/Q3319476">edit</a>)</td>
   </tr>
   <tr>
     <td>140</td>
-    <td><a href="https://tools.wmflabs.org/scholia/Q15766522">Journal of Computer - Aided Molecular Design</a> (<a href="http://www.wikidata.org/entity/Q15766522">edit</a>)</td>
+    <td><a href="https://scholia.toolforge.org/Q15766522">Journal of Computer - Aided Molecular Design</a> (<a href="http://www.wikidata.org/entity/Q15766522">edit</a>)</td>
   </tr>
   <tr>
     <td>124</td>
-    <td><a href="https://tools.wmflabs.org/scholia/Q4914910">Bioinformatics</a> (<a href="http://www.wikidata.org/entity/Q4914910">edit</a>)</td>
+    <td><a href="https://scholia.toolforge.org/Q4914910">Bioinformatics</a> (<a href="http://www.wikidata.org/entity/Q4914910">edit</a>)</td>
   </tr>
   <tr>
     <td>109</td>
-    <td><a href="https://tools.wmflabs.org/scholia/Q4835939">BMC Bioinformatics</a> (<a href="http://www.wikidata.org/entity/Q4835939">edit</a>)</td>
+    <td><a href="https://scholia.toolforge.org/Q4835939">BMC Bioinformatics</a> (<a href="http://www.wikidata.org/entity/Q4835939">edit</a>)</td>
   </tr>
   <tr>
     <td>103</td>
-    <td><a href="https://tools.wmflabs.org/scholia/Q5227381">Database</a> (<a href="http://www.wikidata.org/entity/Q5227381">edit</a>)</td>
+    <td><a href="https://scholia.toolforge.org/Q5227381">Database</a> (<a href="http://www.wikidata.org/entity/Q5227381">edit</a>)</td>
   </tr>
   <tr>
     <td>102</td>
-    <td><a href="https://tools.wmflabs.org/scholia/Q3007982">Journal of Chemical Information and Modeling</a> (<a href="http://www.wikidata.org/entity/Q3007982">edit</a>)</td>
+    <td><a href="https://scholia.toolforge.org/Q3007982">Journal of Chemical Information and Modeling</a> (<a href="http://www.wikidata.org/entity/Q3007982">edit</a>)</td>
   </tr>
 </table>
 ## Code examples

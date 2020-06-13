@@ -43,9 +43,9 @@ ORDER BY DESC(?date)
     <td><b>citing_work</b></td>
   </tr>
   <tr>
-    <td><a href="https://tools.wmflabs.org/scholia/Q34203691">RETRACTED: Predicting new molecular targets for rhein using network pharmacology.</a> (<a href="http://www.wikidata.org/entity/Q34203691">edit</a>)</td>
+    <td><a href="https://scholia.toolforge.org/Q34203691">RETRACTED: Predicting new molecular targets for rhein using network pharmacology.</a> (<a href="http://www.wikidata.org/entity/Q34203691">edit</a>)</td>
     <td>2014-09-18</td>
-    <td><a href="https://tools.wmflabs.org/scholia/Q37426159">CVDHD: a cardiovascular disease herbal database for drug discovery and network pharmacology.</a> (<a href="http://www.wikidata.org/entity/Q37426159">edit</a>)</td>
+    <td><a href="https://scholia.toolforge.org/Q37426159">CVDHD: a cardiovascular disease herbal database for drug discovery and network pharmacology.</a> (<a href="http://www.wikidata.org/entity/Q37426159">edit</a>)</td>
   </tr>
 </table>
 ## Code examples
